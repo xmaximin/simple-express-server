@@ -15,26 +15,26 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 var ingredients = [
     {
-        "id": "234kjw",
-        "text": "Eggs"
+        "id": "1",
+        "text": "Jambon"
     },
     {
-        "id": "as82w",
-        "text": "Milk"
+        "id": "2",
+        "text": "Chocolat"
     },
     {
-        "id": "234sk1",
+        "id": "3",
+        "text": "Lait"
+    },
+    {
+        "id": "4",
         "text": "Bacon"
-    },
-    {
-        "id": "ppo3j3",
-        "text": "Frog Legs"
     }
 ];
 
 
 app.get('/ingredients', function(req, res) {
-    console.log("GET From SERVER");
+    console.log("GET from Server");
     res.send(ingredients);
 });
 
