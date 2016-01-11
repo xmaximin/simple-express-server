@@ -42,6 +42,7 @@ app.post('/ingredients', function(req, res) {
     var ingredient = req.body;
     console.log(req.body);
     ingredients.push(ingredient);
+    ingredients[3].text = "Eagles Eggs";
     res.status(200).send("Successfully posted ingredient");
 });
 
